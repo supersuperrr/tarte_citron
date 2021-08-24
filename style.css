@@ -1,0 +1,196 @@
+*{
+    overflow: auto;
+}
+:root{
+    --color1: #F2CB05; 
+    --color2: #F2F2F2; 
+}
+body{
+    background-color: #F2DA91;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+p.categorie{
+    background-color: black;
+    color: var(--color2);
+    text-align: center;
+    display: inline-block;
+    padding: 8px 18px;
+    margin-bottom: 0;
+    margin-top: -15px;
+    font-weight: bold;
+
+}
+
+.centre{
+    text-align: center;
+    width: 100%;
+}
+
+p.desciption{
+    max-width: 400px;
+    text-align: center;
+    display: inline-block;
+    margin-top: 0;
+    font-size: 14px;
+
+}
+
+
+div.contenu{
+    background-color: white;
+    margin: 30px 15px 40px 15px;
+    padding: 0 8px 20px 8px;
+    /* min-width: 350px; */
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 10px 10px;
+    overflow: visible;
+}
+h1{
+    text-align: center;
+    margin: 0;
+}
+
+div.categorie{
+    margin-bottom: 0px;
+    overflow: visible;
+}
+.ligne{
+    background-color: black;
+    width: 100px;
+    height: 2px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+div.info{
+    position: relative;
+
+}
+
+table.info{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    color: var(--color2);
+    background-color: #f2cb0588;
+    height: 50px;
+
+}
+table.info td{
+    text-align: center;
+    font-size: 12px;
+    vertical-align: top;
+}
+
+table.info th{
+    font-size: 14px;
+    vertical-align: bottom;
+    padding-bottom: 8px; 
+}
+
+img.info{
+    display: block;
+    max-height: 550px;
+    object-fit: cover;
+    min-height: 200px;
+    background-color: grey;
+}
+
+div.colonne{
+    width: 100%;
+    margin-top: 20px;
+}
+
+div.colonne h2{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 15px;
+    border-bottom : 5px solid var(--color1); 
+    padding-bottom: 5px;
+}
+
+div.colonne1{
+    display: inline-block;
+}
+
+div.colonne1 p{
+    text-align: center;
+    font-size: 14px;
+    border: 1px solid lightgray;
+    padding: 8px 0px;
+    margin-top: 4px;
+    margin-bottom: 0;
+
+}
+
+table.preparation p.numero{
+    background-color: var(--color1);
+    color: var(--color2);
+    width: 25px;
+    height: 25px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    padding-top: 5px;
+    box-sizing: border-box;
+    border-radius: 50%;
+    margin: 0;
+}
+
+table.preparation td.etape{
+    font-size: 14px;
+    padding-left: 10px;
+    padding-top: 5px;
+    scroll-padding-bottom: 10px;
+}
+
+table.preparation tr{
+    height: 40px;
+}
+
+/* Style pour ordinateur */
+@media only screen and (min-width: 760px){
+    div.contenu{
+        margin: 60px 5% 80px 5%;
+        padding: 0 30px 30px 30px;
+        min-width: 350px;
+        max-width: 650px;
+    }
+
+    table.info{
+        height: 80px;
+    
+    }
+    table.info td{
+        font-size: 14px;
+    }
+    
+    table.info th{
+        font-size: 16px;
+    }
+
+    div.colonne{
+        width: 45%;
+    }
+
+    
+    div.colonne1{
+        margin-right: 10%;
+    }
+    
+    div.colonne2{
+        float: right;
+    }
+    
+}
+
+@media only screen and (min-width: 900px){
+    div.contenu{
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 645px;
+    }
+}
